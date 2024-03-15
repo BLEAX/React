@@ -1,4 +1,7 @@
-const express = reqiure('express');
+const express = require('express');
+const fs = require('fs');
+
+
 const app = express();
 const port = 80;
 
@@ -6,6 +9,8 @@ app.get('/', (req, res) => {
     res.send();
 });
 
-app.listen(port, () => {
-    console.log(`${port}`);
+app.get('/jonggang', (req, res) => {
+    res.send('<h2>go home</h2>');
 });
+
+app.listen(port);
