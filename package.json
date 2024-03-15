@@ -1,0 +1,22 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "2024-1 경성대학교 소프트웨어학과 웹프로그래밍응용 과목",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BLEAX/React.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BLEAX/React/issues"
+  },
+  "homepage": "https://github.com/BLEAX/React#readme",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}
