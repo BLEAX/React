@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자기소개 과제</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="module">
+      const nameElement = document.createElement("h2");
+      nameElement.textContent = "이름 : 김정훈";
+      nameElement.className = "name";
+
+      const numberElement = document.createElement("h3");
+      numberElement.textContent = "학번 : 2019603018";
+      numberElement.className = "name";
+
+      const majorElement = document.createElement("h3");
+      majorElement.textContent = "학과 : 영어영문학과";
+      majorElement.className = "major";
+
+      const hobbyElement = document.createElement("h4");
+      hobbyElement.textContent = "취미 : 게임, 맨몸운동, 피아노";
+      hobbyElement.className = "hobby";
+
+      const purposeElement = document.createElement("h4");
+      purposeElement.textContent =
+        "목표 : OPIC IM3 이상, 정보처리기사 취득, 취업";
+      purposeElement.className = "purpose";
+
+      const hr1 = document.createElement("hr");
+      const hr2 = document.createElement("hr");
+      const hr3 = document.createElement("hr");
+      const hr4 = document.createElement("hr");
+
+      const rootElement = document.getElementById("root");
+
+      rootElement.append(nameElement);
+
+      rootElement.append(hr1);
+
+      rootElement.append(numberElement);
+
+      rootElement.append(hr2);
+
+      rootElement.append(majorElement);
+
+      rootElement.append(hr3);
+
+      rootElement.append(hobbyElement);
+
+      rootElement.append(hr4);
+
+      rootElement.append(purposeElement);
+    </script>
+  </body>
+</html>
