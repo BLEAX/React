@@ -1,9 +1,14 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from 'react-dom/client';
 
 function Introduce_myself() {
-  return (
-    <div>
+  const textStyle = {
+    textAlign: 'center',
+    fontSize: '20px'
+  };
+
+  return (  
+    <div id='root'>
       <h2>이름 : 김정훈</h2>
       <hr />
       <h3>학번 : 2019603018</h3>
@@ -17,9 +22,12 @@ function Introduce_myself() {
   );
 }
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.render(
   <React.StrictMode>
     <Introduce_myself />
   </React.StrictMode>
 );
+
+export default Introduce_myself;
