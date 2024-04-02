@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from "react-dom/client";
 
 function Introduce_myself() {
   return (
@@ -16,4 +17,9 @@ function Introduce_myself() {
   );
 }
 
-export default Introduce_myself;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <Introduce_myself />
+  </React.StrictMode>
+);
