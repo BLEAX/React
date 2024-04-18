@@ -1,0 +1,17 @@
+.button {
+  background-color: #3498db;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px; /* 내부 여백 설정 */
+  cursor: pointer; /* 마우스를 올리면 포인터 커서로 변경 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+  transition: background-color 0.3s ease; /* 배경색 변화에 대한 전환 효과 */
+  margin-right: 10px; /* 버튼 사이의 간격 설정 */
+
+  &:hover {
+    background-color: #2980b9;
+  }
+}
