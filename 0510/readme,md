@@ -1,0 +1,12 @@
+SASS : 
+- css 확장언어들 (Sass와 SCSS가 있다.)
+- 개발용 언어이기 때문에 웹브라우저가 읽을 수 없다.
+- 따라서 jsx처럼 바벨 컴파일러를 통해 CSS로 변환하여 HTML에 연결
+- CSS파일을 확장자만 SCSS로 바꾸어도 정상적으로 작동
+
+
++ 를 통해 두 컴포넌트가 같이 있다면 실행되는 셀렉터를 지정가능
+
+Styled-Component : 
+- JS 안에 CSS 를 작성하는 것을 의미
+- styled-components는 CSS in JS 관련 리액트 라이브러리 중에서 가장 인기 있는 라이브러리
