@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+useReducer:
+- useState를 대체할 수 있는 함수
+- 일반적으로는 useState를 쓰되, 좀 더 복잡한 상태 관리가 필요한 경우 useReducer사용
+(dispatch함수 : reducer 함수를 실행시키는 함수)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+useContext:
+- 전역적인 데이터(Context)를 여러 컴포넌트에게 전달하는 함수
+- useContext이전에는 Redux를 사용했었음.
 
-In the project directory, you can run:
 
-### `npm start`
+useRef:
+- 저장공간 또는 DOM요소에 접근하기 위해 사용하는 React Hook
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+forwardRef:
+- 함수형 컴포넌트에서 부모 컴포넌트에서 자식 컴포넌트 안의 DOM element에 접근할 때 사용
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+useImperativeHandle:
+- 부모 컴포넌트가 자식 컴포넌트 내부의 특정 함수나 메서드에 직접 접근할 수 있게 한다.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+useEffect:
+- 컴포넌트가 렌더링 될 때마다 특정 작업을 실행할 수 있도록 하는 훅
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+useLayoutEffect:
+- VirtualDOM을 이용해도 불구하고 깜빡거리는 현상이 발생할 경우 사용하는 함수
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+useInsertionEffect:
+- CSS-in-JS 라이브러리를 사용하는 경우
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+useMemo:
+- 자주 필요한 값을 맨 처음 계산할 때 캐싱해 놓아서 그 값이 필요할 때마다 캐시에서 꺼내서 사용하는 것
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+useCallback:
+- 첫번째 인자로 전달된 함수를 메모이제이션(캐싱, 저장)하고, 컴포넌트가 재렌더링될 때마다 새로 생성되지 않고,
+의존성 배열에 명시된 값이 변경될 때만 함수가 새로 생성됨.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+useTransition:
+- 렌더링을 자연스럽게 할 수 있는 훅
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+useId:
+- 컴포넌트의 상태를 변경할 때마다 렌더링이 발생하는데, ID가 매번 재생성되는 것을 막기 위해 고유한 ID를 생성할 수 있게 하는 훅
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+useSyncExternalStore:
+- 리액트에서 내부적으로 제공하는 상태관리 api가 아니라 자체적으로 상태관리 툴을 만들어 리액트 훅과 연동시킨 외부 상태관리 라이브러리들
+(redux, mobx, recoil, jotai 등등)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Custom Hook:
+- 개발자가 직접 만드는 Hook
