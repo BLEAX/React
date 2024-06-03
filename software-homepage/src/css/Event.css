@@ -1,0 +1,34 @@
+.body {
+  padding-left: 550px;
+  justify-items: center;
+  align-items: center;
+}
+
+.event {
+  display: flex;
+  width: 60%;
+  background-color: white;
+  border-bottom: 10px solid #ccc;
+  border-radius: 50px;
+  padding: 10px 0;
+  margin: 10px 0;
+  height: 60px;
+  background-color: beige;
+}
+
+.year {
+  border-radius: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 60px;
+}
+
+.year span {
+  padding-right: 60px;
+}
+
+.description {
+  width: 600px;
+  height: 30px;
+  padding-top: 10px;
+}

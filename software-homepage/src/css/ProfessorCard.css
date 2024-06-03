@@ -1,0 +1,52 @@
+.Professor-card {
+  width: 800px; /* 블럭의 너비 */
+  border: 2px solid #ddd;
+  border-radius: 8px; /* 모서리를 둥글게 */
+  overflow: hidden; /* 이미지가 넘치지 않도록 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 약간의 그림자 효과 */
+  margin: 16px; /* 외부 여백 */
+  text-align: left; /* 텍스트 가운데 정렬 */
+  background-color: white;
+}
+
+.Professor-card-image {
+  width: 200px;
+  height: auto;
+  float: left;
+  padding: 100px 0 0 50px;
+}
+
+.Professor-card-name {
+  font-size: 24px;
+  text-align: center;
+  padding: 0 200px 0 0;
+  color: #333;
+}
+
+.Professor-card-description {
+  font-size: 20px;
+  padding: 330px 16px 16px 50px;
+  color: #777;
+}
+
+.details-button {
+  float: right;
+  padding: 10px 30px;
+  margin: 30px;
+  border: none;
+  background-color: #005bac;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.details-button:hover {
+  background-color: #003f7d;
+}
+
+.person-card-details {
+  font-size: 14px;
+  color: #555;
+  padding: 10px;
+}

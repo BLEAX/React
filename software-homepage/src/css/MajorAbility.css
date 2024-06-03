@@ -1,0 +1,33 @@
+.major-introduce {
+  padding: 20px;
+}
+
+.competency-table {
+  width: 70%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.competency-table th,
+.competency-table td {
+  border: 1px solid #ddd;
+  padding: 16px;
+  font-size: 16px;
+}
+
+.competency-table th {
+  background-color: #005bac;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+
+.competency-table td {
+  background-color: #e6f0ff;
+  text-align: center;
+  color: black;
+}
+
+.competency-table tbody tr:nth-child(even) td {
+  background-color: #b3d1ff;
+}
